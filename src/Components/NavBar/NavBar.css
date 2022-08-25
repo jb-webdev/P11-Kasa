@@ -1,0 +1,25 @@
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-bottom: 0;
+    margin-right: 100px;
+}
+
+#navbar-logo img {
+   height: 68%;
+}
+/*#navbar-wrapper-link {}*/
+.navbar-link {
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    margin-left: 57px;
+}
