@@ -5,6 +5,7 @@ import Home from "./Components/Home/Home.js";
 import About from "./Components/About/About.js";
 import ErrorPage from "./Components/ErrorPage/ErrorPage.js";
 import NavBar from "./Components/NavBar/NavBar.js"
+import Footer from './Components/Footer/Footer.js';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

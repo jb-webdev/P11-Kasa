@@ -1,12 +1,23 @@
-body {
-  margin: 0;
-  
-}
+
 :root {
   --color-primary: #FF6060;
+
+  
+  --color-bg-primary: #F6F6F6;
+
+
   
   
 
   --font-primary: 'Montserrat';
+  --fonts-color: #ffffff;
   
+}
+html{
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+body {
+  margin: 0;
 }
