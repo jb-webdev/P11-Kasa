@@ -30,3 +30,10 @@
     margin-top: 28.56px;
     text-align: center;
 }
+/* RESPONSIVE */
+
+@media screen and (max-width: 375px){
+    .footer-copyright{
+        font-size: 12px;
+    }
+}

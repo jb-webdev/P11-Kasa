@@ -7,8 +7,8 @@ function NavBar() {
     <nav id="navbar">
       <Link id="navbar-logo" to="/" ><img src={logo} alt="logo" /></Link>
       <div id="navbar-wrapper-link">
-        <Link class="navbar-link" to="/">Accueil</Link>
-        <Link class="navbar-link" to="/About">À propos</Link>
+        <Link className="navbar-link" to="/">Accueil</Link>
+        <Link className="navbar-link" to="/About">À propos</Link>
       </div>
     </nav>
   )

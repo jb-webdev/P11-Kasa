@@ -11,7 +11,7 @@
 }
 
 #navbar-logo img {
-   height: 68%;
+   height: 68px;
 }
 /*#navbar-wrapper-link {}*/
 .navbar-link {
@@ -22,4 +22,22 @@
     font-weight: 500;
     font-size: 24px;
     margin-left: 57px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 375px) {
+    #navbar-logo img {
+        height: 47px;
+      }
+    #navbar {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+    .navbar-link {
+        font-size: 12px;
+        margin-left: 10px;
+    }
 }

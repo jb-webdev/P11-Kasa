@@ -1,0 +1,39 @@
+
+
+#compoMask-one {
+    background-image: url("./img-mask-one.png");
+    background-position: center 45%;
+    background-size: cover;
+    height: 223px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#compoMask-two {
+    background-image: url("./img-mask-two.png");
+    background-position: center 40%;
+    background-size: cover;
+    height: 223px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#compoMask-one-h1 {
+    color: var(--fonts-color);
+    font-family: var(--font-primary);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+}
+#compoMask-two-h1{
+    color: var(--fonts-color);
+    font-family: var(--font-primary);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+}
+
