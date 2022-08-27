@@ -4,18 +4,17 @@
  * Date : Aout 2022
  */
  import styled from 'styled-components'
- /**
-    background-image: url(../../img-banner-one.png); 
-    background-position: center 45%;
-    background-size: cover;  
-  */
+ import imageOne from '../../img/img-banner-one.png'
+ 
  export const Banner = styled.div`
-    background-color: #313131;
-    height: 223px;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   background-image: url(${imageOne});
+   background-position: center 45%;
+   background-size: cover;
+   height: 223px;
+   border-radius: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
  
    @media screen and (max-width: 375px) {
      

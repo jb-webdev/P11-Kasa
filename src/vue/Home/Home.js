@@ -6,11 +6,13 @@
 import React from 'react'
 import ContainerHome from './Home.elements.js'
 import BannerCompo from '../../Components/BannerCompo/BannerCompo.js'
+import datasGlobal from '../../services/data/datasGlobal.json'
 
 export default function Home() {
+  console.log(datasGlobal.Banner[0].link)
   return (
     <ContainerHome>
-      <BannerCompo textBanner = 'Chez vous, partout et ailleurs'/>
+      <BannerCompo textBanner = {datasGlobal.Banner[0].text}/>
     </ContainerHome>
   )
 }

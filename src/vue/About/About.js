@@ -6,12 +6,14 @@
  import React from 'react'
  import { ContainerAbout } from './About.elements.js'
  import BannerCompo from '../../Components/BannerCompo/BannerCompo.js'
+ import datasGlobal from '../../services/data/datasGlobal.json'
+
  
 
 export default function About() {
   return (
     <ContainerAbout>
-        <BannerCompo textBanner = ''/>
+        <BannerCompo textBanner = {datasGlobal.Banner[1].text}/>
     </ContainerAbout>
   )
 }
