@@ -8,8 +8,9 @@ import {Banner, BannerTitle} from './BannerCompo.elements.js'
 
 export default function BannerCompo(props) {
   return (
-    <Banner>
+    <Banner $page={props.page}>
         <BannerTitle>{props.textBanner}</BannerTitle>
     </Banner>
   )
 }
+
