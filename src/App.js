@@ -12,7 +12,11 @@ import Navbar from './Components/Navbar/Navbar.js'
 import Home from "./vue/Home/Home.js"
 import About from './vue/About/About.js'
 import Error from './vue/Error/Error.js'
+
+import FooterCompo from './Components/FooterCompo/FooterCompo.js'
+
 import datasGlobal from './services/data/datasGlobal.json'
+import GlobalStyle from './globalStyles.js'
 
 export default function App() {
   return (
@@ -20,7 +24,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home page="home" text={datasGlobal.Banner[0].text}/>} />
-        <Route path="/about" element={<About page="about" text={datasGlobal.Banner[1].text}/>} />
+        <Route path="/about" element={<About page="about" text={datasGlobal.Banner[1].text} />} />
         <Route path="/*" element={
             <Error 
                 text={datasGlobal.Error[0].text}
@@ -29,7 +33,8 @@ export default function App() {
             />} 
         />
       </Routes>
-      
+      <FooterCompo />
+      <GlobalStyle />
     </AppRoutes>
   )
 }
