@@ -6,12 +6,11 @@
 import React from 'react'
 import { ContainerAbout } from './About.elements.js'
 import BannerCompo from '../../Components/BannerCompo/BannerCompo.js'
-import datasGlobal from '../../services/data/datasGlobal.json'
 
-export default function About() {
+export default function About(props) {
   return (
     <ContainerAbout>
-        <BannerCompo textBanner = {datasGlobal.Banner[1].text} page="about"/>
+        <BannerCompo textBanner = {props.text} page={props.page}/>
     </ContainerAbout>
   )
 }

@@ -6,18 +6,13 @@
 import React from 'react'
 import {ContainerError, TextError, TitleError, LinkError} from './Error.elements.js'
 
-export default function Error() {
+export default function Error(props) {
+  
   return (
     <ContainerError>
-        <TextError >
-          404
-        </TextError>
-        <TitleError >
-          Oups ! La page que vous demandez n'éxiste pas
-        </TitleError>
-        <LinkError to='/'>
-          Retourner sur la page d'accueil
-        </LinkError>
+        <TextError>{props.text}</TextError>
+        <TitleError>{props.title}</TitleError>
+        <LinkError to='/'>{props.textLink}</LinkError>
     </ContainerError>
   )
 }
