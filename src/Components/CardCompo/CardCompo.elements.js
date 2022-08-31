@@ -16,6 +16,15 @@ export const Card = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+        @media screen and (max-width: 1045px) {
+            width: 100%;
+        }
+        @media screen and (max-width: 680px) {}
+        @media screen and (max-width: 500px) {}
+        @media screen and (max-width: 375px) {
+            height: 255px;
+            width: 355px;
+        }
 `
 export const CardTitle = styled.h2`
     font-style: normal;
@@ -31,5 +40,10 @@ export const CardTitle = styled.h2`
     margin-right: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
+
+        @media screen and (max-width: 826px) {}
+        @media screen and (max-width: 680px) {}
+        @media screen and (max-width: 500px) {}
+        @media screen and (max-width: 375px) {}
 
 `

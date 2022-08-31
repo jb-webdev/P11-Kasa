@@ -23,6 +23,19 @@ const Gallery = styled.section`
     margin-top: 43px;
     margin-bottom: 43px;
     background-color: #F6F6F6;
+
+        @media screen and (max-width: 1045px) {
+            justify-content: center;
+        }
+        
+        @media screen and (max-width: 500px) {
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+            background-color: #ffffff;
+        }
+        @media screen and (max-width: 375px) {}
 `
 
 export default Gallery

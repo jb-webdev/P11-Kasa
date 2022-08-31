@@ -1,11 +1,14 @@
 import React, {useState} from 'react'
 import { MdKeyboardArrowDown, MdKeyboardArrowUp} from 'react-icons/md';
-import {Dropdown, DropdownHeader,DropdownHeaderText, DropdownBody, DropdownBodyText} from './DropdownCompo.elements'
+import {DropdownWrapper, DropdownHeader,DropdownHeaderText, DropdownBody, DropdownBodyText} from './DropdownCompo.elements'
 
+
+
+  
 function DropdownCompo(props) {
 
   const styleIconeUp = {
-    display: 'none',
+    display: 'block',
     color: '#ffffff',
     marginRight: '33.16px',
   }
@@ -14,22 +17,21 @@ function DropdownCompo(props) {
     color: '#ffffff',
     marginRight: '33.16px',
   }
-  const [isOpen, setOpen] = useState(true)
-  const handleClick = () => {
-    console.log(setOpen(!isOpen))
-  }
+  const [isOpen, setOpen] = useState(false)
+  const handleClick = () => setOpen(!isOpen)
+console.log(isOpen)
 
+// <DropdownHeader onClick={handleClick}>
   return (
-    <Dropdown>
+    <DropdownWrapper>
         <DropdownHeader onClick={handleClick}>
             <DropdownHeaderText>{props.title}</DropdownHeaderText>
-            <MdKeyboardArrowDown style={styleIconeDown} />
-            <MdKeyboardArrowUp style={styleIconeUp}/>
+            {isOpen ? <MdKeyboardArrowUp style={styleIconeUp}/> : <MdKeyboardArrowDown style={styleIconeDown} />}
         </DropdownHeader>
-        <DropdownBody>
-            <DropdownBodyText>{props.text}</DropdownBodyText>
+        <DropdownBody $mode={isOpen}>
+            <DropdownBodyText>{props.description}</DropdownBodyText>
         </DropdownBody>
-    </Dropdown>
+    </DropdownWrapper>
   )
 }
 

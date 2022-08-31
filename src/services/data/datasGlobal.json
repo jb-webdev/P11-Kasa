@@ -1,8 +1,6 @@
 {
     "className":"Class 2B",
     "year":2022,
-    "color":null,
-    "active":true,
     "Footer":{"copyright":"Jhon"},
     "Banner":[
         {"text":"Chez vous, partout et ailleurs","link":"../../img/img-banner-one.png"},

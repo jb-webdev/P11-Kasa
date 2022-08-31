@@ -9,5 +9,9 @@ const ContainerHome = styled.main`
   margin-left: 100px;
   margin-right: 100px;
   overflow: hidden;
+  @media screen and (max-width: 680px) {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
 `
 export default ContainerHome

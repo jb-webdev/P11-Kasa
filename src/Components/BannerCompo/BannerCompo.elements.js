@@ -14,11 +14,21 @@ import imgTwo from '../../img/img-banner-two.png'
        return css`
          background-image: url(${imgTwo});
          background-position: center 40%;
+
+         @media screen and (max-width: 500px) {
+          background-position: 90% 45%;
+          background-size: 100%;
+        }
        `;
      default:
        return css`
          background-image: url(${imgOne}); 
          background-position: center 45%;
+
+         @media screen and (max-width: 500px) {
+            background-position: 90% 45%;
+            background-size: 180%;
+          }
        `;
    }
  }}
@@ -29,18 +39,26 @@ import imgTwo from '../../img/img-banner-two.png'
    justify-content: center;
    align-items: center;
  
-   @media screen and (max-width: 375px) {
-     
-    }
+   
  `
  export const BannerTitle = styled.h1`
     color: #ffffff;
     font-style: normal;
     font-weight: 500;
-    font-size: 48px;
- 
-   @media screen and (max-width: 375px) {
-     
+    font-size: 2em;
+    @media screen and (max-width: 826px) {
+      font-size: 1.5em;
     }
+    @media screen and (max-width: 680px) {
+      font-size: 1.4em;
+    }
+   @media screen and (max-width: 500px) {
+     font-size: 1.1em;
+     margin-left: 16px
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 24px;
+      
+     }
  `
 
