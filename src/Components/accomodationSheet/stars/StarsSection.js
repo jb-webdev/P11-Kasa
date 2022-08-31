@@ -1,19 +1,39 @@
+/**
+ * Author : Jean-Jacques Boero
+ * Projet : App Kasa / P10 OC
+ * Date : Aout 2022
+ */
 import React from 'react'
 import {AiFillStar} from 'react-icons/ai'
 
 import { StarsWrapper } from './StarsSection.elements'
 
-export default function StarsSection() {
+export default function StarsSection(props) {
+
     const style = {color: '#FF6060', fontSize:'30px', marginLeft: '10px' }
     const styleTwo = {color: '#E3E3E3', fontSize:'30px', marginLeft: '10px' }
+    
+    const nbrGreyStars = 5 - props.rating 
+    
 
   return (
     <StarsWrapper>
-        <AiFillStar style={style}/>
-        <AiFillStar style={style}/>
-        <AiFillStar style={style}/>
-        <AiFillStar style={styleTwo}/>
-        <AiFillStar style={styleTwo}/>
+      {(() => {
+        let stars = [];
+        for (let i = 0; i < props.rating; i++) {
+          stars.push(<AiFillStar style={style}/> )
+        }
+        return stars
+      })()}
+
+      {(() => {
+          let stars = [];
+          for (let i = 0; i < nbrGreyStars; i++) {
+            stars.push(<AiFillStar style={styleTwo}/> )
+          }
+          return stars
+        })()}
+        
     </StarsWrapper>
   )
 }

@@ -24,11 +24,11 @@ console.log(isOpen)
 // <DropdownHeader onClick={handleClick}>
   return (
     <DropdownWrapper>
-        <DropdownHeader onClick={handleClick}>
+        <DropdownHeader onClick={handleClick} size={props.size}>
             <DropdownHeaderText>{props.title}</DropdownHeaderText>
             {isOpen ? <MdKeyboardArrowUp style={styleIconeUp}/> : <MdKeyboardArrowDown style={styleIconeDown} />}
         </DropdownHeader>
-        <DropdownBody $mode={isOpen}>
+        <DropdownBody $mode={isOpen} size={props.size}>
             <DropdownBodyText>{props.description}</DropdownBodyText>
         </DropdownBody>
     </DropdownWrapper>

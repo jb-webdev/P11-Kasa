@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const DropdownWrapper = styled.div`
     display: flex;
@@ -20,7 +20,7 @@ export const DropdownWrapper = styled.div`
       }
 `
 export const DropdownHeader = styled.div`
-    width: 90%;
+    width: ${props => props.$model ? props.$model : '90%'};
     height: 47px;
     border-radius: 5px;
     background-color: #FF6060;
@@ -28,13 +28,12 @@ export const DropdownHeader = styled.div`
     align-items: center;
     justify-content: space-between;
     z-index: 1;
-
-    @media screen and (max-width: 850px) {
-        width: 100%;
-    }
-    @media screen and (max-width: 680px) {}
-    @media screen and (max-width: 500px) {}
-    @media screen and (max-width: 375px) {}
+        @media screen and (max-width: 850px) {
+            width: 100%;
+        };
+        @media screen and (max-width: 680px) {};
+        @media screen and (max-width: 500px) {};
+        @media screen and (max-width: 375px) {};
 `
 export const DropdownHeaderText = styled.p`
     color: #ffffff;
@@ -44,36 +43,36 @@ export const DropdownHeaderText = styled.p`
     letter-spacing: 0em;
     text-align: left;
     margin-left: 19px;
-    @media screen and (max-width: 1045px) {}
-    @media screen and (max-width: 680px) {}
-    @media screen and (max-width: 500px) {}
-    @media screen and (max-width: 375px) {}
+    @media screen and (max-width: 1045px) {};
+    @media screen and (max-width: 680px) {};
+    @media screen and (max-width: 500px) {};
+    @media screen and (max-width: 375px) {};
     
 `
 export const DropdownBody = styled.div`
-
-    display: ${props => props.$mode ?" block": "none"};
-    width: 90%;
-    height: auto;
-    max-height: 450px;
-    border-radius: 5px;
-    position: relative;
-    top: -10px;
-    text-align: justify;
-    background: #F7F7F7;
-    border-radius: 5px;
-    z-index: 0;
-    overflow: hidden;
-    margin-bottom: 10px;
-    @media screen and (max-width: 850px) {
-        width: 100%;
-        padding-left: 11.75px;
-        padding-right: 6.91px;
-        padding-bottom: 52.58px
-    }
-    @media screen and (max-width: 680px) {}
-    @media screen and (max-width: 500px) {}
-    @media screen and (max-width: 375px) {}
+        display: ${props => props.$mode ?" block": "none"};
+        width: ${props => props.$model ? props.$model : '90%'};
+        height: auto;
+        max-height: 450px;
+        border-radius: 5px;
+        position: relative;
+        top: -10px;
+        text-align: justify;
+        background: #F7F7F7;
+        border-radius: 5px;
+        z-index: 0;
+        overflow: hidden;
+        margin-bottom: 10px;
+        
+            @media screen and (max-width: 850px) {
+                width: 100%;
+                padding-left: 11.75px;
+                padding-right: 6.91px;
+                padding-bottom: 52.58px
+            };
+            @media screen and (max-width: 680px) {};
+            @media screen and (max-width: 500px) {};
+            @media screen and (max-width: 375px) {};
 `
 export const DropdownBodyText = styled.p`
     font-style: normal;

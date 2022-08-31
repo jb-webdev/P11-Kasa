@@ -35,7 +35,7 @@ function SectionInfo() {
       
       <WrapperBoxTwo>
         <SectionProfile name="Dumas" firstName="Alexandre"/>
-        <StarsSection />
+        <StarsSection rating="4"/>
       </WrapperBoxTwo>
 
     </InfoSection>

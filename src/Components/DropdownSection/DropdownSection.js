@@ -10,7 +10,7 @@ function DropdownSection() {
     <WrapperDropdown>
       {DataGlobal.About.map(
             data =>
-            <DropdownCompo key={countKey ++}title={data.title} description={data.description} />
+            <DropdownCompo key={countKey ++}title={data.title} description={data.description} size=""/>
         )}
     </WrapperDropdown>
   )
