@@ -40,7 +40,6 @@ export const HeaderLink = styled(Link)`
     }
     @media screen and (max-width: 680px) {
       margin-left: 30px;
-      
     }
     @media screen and (max-width: 500px) {
       font-size: 15px;
@@ -58,7 +57,6 @@ export const Logo = styled.img`
   }
   @media screen and (max-width: 680px) {
     height: 55px;
-    
   }
   @media screen and (max-width: 500px) {
     height: 45px;
