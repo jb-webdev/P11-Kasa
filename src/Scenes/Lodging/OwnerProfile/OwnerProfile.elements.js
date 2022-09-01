@@ -46,8 +46,10 @@ export const ProfileName = styled.p`
         @media screen and (max-width: 500px) {};
         @media screen and (max-width: 375px) {};
 `
-export const ProfileImage = styled.div`
-    background: #C4C4C4;
+export const ProfileImage = styled.img.attrs(props => ({
+    alt: props.alt,
+    src: props.src,
+  }))`
     border-radius: 50%;
     width: 64px;
     height: 64px;

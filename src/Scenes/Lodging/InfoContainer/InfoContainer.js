@@ -22,6 +22,7 @@ import {
 } from './InfoContainer.elements.js'
 
 export default function InfoContainer(props) {
+  
   return (
     <ContainerInfo>
       <WrapperBoxOne>
@@ -38,7 +39,7 @@ export default function InfoContainer(props) {
       
       <WrapperBoxTwo>
 
-        <OwnerProfile name={props.name} firstName={props.firstname}/>
+        <OwnerProfile name={props.name} firstName={props.firstname} picture={props.picture}/>
 
         <StarsSection rating={props.rating}/>
 

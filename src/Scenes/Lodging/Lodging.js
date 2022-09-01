@@ -34,7 +34,7 @@
           firstname={str[0]}
           name={str[1]}
           rating={datasFound.rating}
-		  picture={datasFound.host.picture}
+          picture={datasFound.host.picture}
           />
        <DescriptionContainer description={datasFound.description}equipments={datasFound.equipments}/>
      </LodgingMain>

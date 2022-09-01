@@ -9,7 +9,10 @@
    display: flex;
    align-items: center;
    justify-content:center;
-   width: 115px;
+   min-width: 115px;
+   max-width: 300px;
+   padding-left: 10px;
+   padding-right: 10px;
    height: 25px;
    background-color: #FF6060;
    border-radius: 10px;
@@ -21,15 +24,16 @@
       @media screen and (max-width: 375px) {}
  `
  export const TagElementText = styled.p`
+ 
     font-style: normal;
     font-weight: 500;
     text-align: center;
     color: #ffffff;
     font-size: 14px;
 
-      @media screen and (max-width: 826px) {}
-      @media screen and (max-width: 680px) {}
-      @media screen and (max-width: 500px) {}
-      @media screen and (max-width: 375px) {}
+      @media screen and (max-width: 826px) {};
+      @media screen and (max-width: 680px) {};
+      @media screen and (max-width: 500px) {};
+      @media screen and (max-width: 375px) {};
           
  `

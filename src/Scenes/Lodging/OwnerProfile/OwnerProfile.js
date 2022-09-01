@@ -13,13 +13,16 @@ import {
   ProfileImage} from './OwnerProfile.elements.js'
 
 export default function OwnerProfile(props) {
+  console.log("==========")
+  console.log(props.picture)
+  console.log("==========")
   return (
     <WrapperProfile>
       <OwnerName>
         <ProfileFirstName>{props.firstName}</ProfileFirstName>
         <ProfileName>{props.name}</ProfileName>
       </OwnerName>
-      <ProfileImage />
+      <ProfileImage src={props.picture} alt="image de toto"/>
     </WrapperProfile>
   )
 }
