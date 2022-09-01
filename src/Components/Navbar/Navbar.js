@@ -7,7 +7,7 @@
 import React from 'react'
 
 import { Link } from 'react-router-dom'
-import logo from '../../img/logo-kasa.png'
+import logo from '../../services/img/logo-kasa.png'
 
 import {NavBar, ContainerLink, HeaderLink, Logo} from './Navbar.elements.js'
 

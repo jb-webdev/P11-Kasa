@@ -9,14 +9,15 @@ import { Routes, Route } from "react-router-dom"
 
 // import Composants
 import Navbar from './Components/Navbar/Navbar.js'
-import Home from "./vue/Home/Home.js"
-import About from './vue/About/About.js'
-import Error from './vue/Error/Error.js'
-import Lodging from './vue/Lodging/Lodging.js'
+import Footer from './Components/Footer/Footer.js'
+import Home from "./Scenes/Home/Home.js"
+import About from './Scenes/About/About.js'
+import Error from './Scenes/Error/Error.js'
+import Lodging from './Scenes/Lodging/Lodging.js'
 
-import FooterCompo from './Components/FooterCompo/FooterCompo.js'
-
+// Import des datas de l'application
 import datasGlobal from './services/data/datasGlobal.json'
+// Style global de l'application
 import GlobalStyle from './globalStyles.js'
 
 export default function App() {
@@ -26,7 +27,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home page="home" text={datasGlobal.Banner[0].text}/>} />
         <Route path="/about" element={<About page="about" text={datasGlobal.Banner[1].text} />} />
-        <Route path="/lodging" element={<Lodging/>} />
+        <Route path="/lodging/:id" element={<Lodging/>} />
         <Route path="/*" element={
             <Error 
                 text={datasGlobal.Error[0].text}
@@ -35,15 +36,13 @@ export default function App() {
             />} 
         />
       </Routes>
-      <FooterCompo />
+      <Footer />
       <GlobalStyle />
     </AppRoutes>
   )
 }
 
 // Style compo
-
-
 const AppRoutes = styled.div`
   height: 100vh;
   width: 100%;
