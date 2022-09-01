@@ -21,7 +21,7 @@ export default function StarsSection(props) {
       {(() => {
         let stars = [];
         for (let i = 0; i < props.rating; i++) {
-          stars.push(<AiFillStar style={style}/> )
+          stars.push(<AiFillStar style={style} key={`colorStar` + i}/> )
         }
         return stars
       })()}
@@ -29,7 +29,7 @@ export default function StarsSection(props) {
       {(() => {
           let stars = [];
           for (let i = 0; i < nbrGreyStars; i++) {
-            stars.push(<AiFillStar style={styleTwo}/> )
+            stars.push(<AiFillStar style={styleTwo} key={`greyStar` + i}/> )
           }
           return stars
         })()}

@@ -8,6 +8,8 @@ import InfoTitle from '../InfoTitle/InfoTitle.js'
 import Tag from "../Tag/Tag.js"
 import SectionProfile from '../SectionProfile/SectionProfile.js'
 import StarsSection from '../stars/StarsSection.js'
+
+
 import {
   InfoSection, 
   WrapperBoxOne, 
@@ -16,27 +18,31 @@ import {
   WrapperTag
 } from './SectionInfo.elements.js'
 
-function SectionInfo() {
+function SectionInfo(props) {
+  console.log(props.tag)
   return (
     <InfoSection>
-      
       <WrapperBoxOne>
+
         <WrapperTitle>
-          <InfoTitle title="Cozy loft on the Canal Saint-Martin" location="Paris, iles de france"/>
-          
+          <InfoTitle title={props.title} location={props.location} />
         </WrapperTitle>
+
         <WrapperTag>
-          <Tag text={"Cozy"}/>
-          <Tag text={"Canal"}/>
-          <Tag text={"Paris 10"}/>
+          {props.tag.map(tag => <Tag text={tag}/>)}
         </WrapperTag>
 
       </WrapperBoxOne>
       
       <WrapperBoxTwo>
-        <SectionProfile name="Dumas" firstName="Alexandre"/>
-        <StarsSection rating="4"/>
+
+        <SectionProfile name={props.name} firstName={props.firstname}/>
+
+        <StarsSection rating={props.rating}/>
+
       </WrapperBoxTwo>
+
+      
 
     </InfoSection>
   )
