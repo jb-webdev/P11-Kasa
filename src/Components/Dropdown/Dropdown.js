@@ -25,7 +25,7 @@ export default function Dropdown(props) {
   if (bodyText === "text"){
     compoText = <Text dropdownModel={dropdownModel} description={props.description}/>
   } else {
-    compoText = <ListContainer> {props.description.map(item => <List item={item}/>)} </ListContainer>
+    compoText = <ListContainer> {props.description.map(item => <List item={item} key={item}/>)} </ListContainer>
   }
   // ici mets du style à nos ReactIcons
   const styleIconeUp = {

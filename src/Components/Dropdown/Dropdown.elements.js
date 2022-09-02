@@ -205,5 +205,8 @@ export const ListContainer = styled.div`
     padding-top: 20px;
     padding-bottom: 18px;
     with: 100%;
-
+        @media screen and (max-width: 850px) {}
+        @media screen and (max-width: 680px) {}
+        @media screen and (max-width: 500px) {}
+        @media screen and (max-width: 375px) {}
 `

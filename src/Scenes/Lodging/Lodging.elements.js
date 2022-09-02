@@ -7,8 +7,9 @@ export const LodgingMain = styled.main`
     margin-right : 100px;
     height: auto;    
 
-    @media screen and (max-width: 1045px) {}
-    @media screen and (max-width: 680px) {}
-    @media screen and (max-width: 500px) {}
-    @media screen and (max-width: 375px) {}
+    
+    @media screen and (max-width: 375px) {
+        margin-left : 20px;
+        margin-right : 20px;
+    }
 `

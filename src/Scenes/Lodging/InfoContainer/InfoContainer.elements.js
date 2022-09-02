@@ -16,7 +16,9 @@
       @media screen and (max-width: 826px) {};
       @media screen and (max-width: 680px) {};
       @media screen and (max-width: 500px) {};
-      @media screen and (max-width: 375px) {};
+      @media screen and (max-width: 375px) {
+         flex-direction: column;
+      };
    `
  export const WrapperBoxOne = styled.div`
     display: flex;

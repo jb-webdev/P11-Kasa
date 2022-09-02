@@ -7,10 +7,19 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const ContainerError = styled.main`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
     padding: 0;
 `
@@ -25,7 +34,7 @@ export const TextError = styled.p`
     @media screen and (max-width: 375px) {
         font-size: 28.235vw;
         margin-bottom: 11px;
-        margin-top: 160px;
+        margin-top: 100px;
     }
 `
 export const TitleError = styled.h1`
@@ -45,7 +54,8 @@ export const TitleError = styled.h1`
 `
 export const LinkError = styled(Link)`
     color: #FF6060;
-    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;

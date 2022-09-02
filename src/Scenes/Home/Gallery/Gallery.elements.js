@@ -7,11 +7,21 @@
 import styled from "styled-components";
 
 const GallerySection = styled.section`
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    column-gap: 60px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 60px;
+        -moz-column-gap: 60px;
+            column-gap: 60px;
     row-gap: 50px;
     padding-top: 56px;
     padding-bottom: 56px;
@@ -25,7 +35,9 @@ const GallerySection = styled.section`
     background-color: #F6F6F6;
 
         @media screen and (max-width: 1045px) {
-            justify-content: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
         }
         
         @media screen and (max-width: 500px) {
@@ -35,6 +47,5 @@ const GallerySection = styled.section`
             padding-right: 0;
             background-color: #ffffff;
         }
-        @media screen and (max-width: 375px) {}
 `
 export default GallerySection

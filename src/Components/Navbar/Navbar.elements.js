@@ -25,6 +25,7 @@ export const NavBar = styled.header`
       margin-left: 20px;
       margin-bottom: 27px;
       margin-right: 20px;
+      height: 50px;
     }
 `
 export const HeaderLink = styled(Link)`

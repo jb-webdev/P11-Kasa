@@ -16,7 +16,9 @@
    @media screen and (max-width: 826px) {}
    @media screen and (max-width: 680px) {}
    @media screen and (max-width: 500px) {}
-   @media screen and (max-width: 375px) {}
+   @media screen and (max-width: 375px) {
+    font-size: 18px
+   }
 `
 export const TitleLocation = styled.p`
  height: 26px;
@@ -31,6 +33,8 @@ export const TitleLocation = styled.p`
    @media screen and (max-width: 826px) {}
    @media screen and (max-width: 680px) {}
    @media screen and (max-width: 500px) {}
-   @media screen and (max-width: 375px) {}
+   @media screen and (max-width: 375px) {
+    font-size: 14px
+   }
 
 `

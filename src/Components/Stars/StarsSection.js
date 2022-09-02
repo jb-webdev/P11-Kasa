@@ -4,36 +4,32 @@
  * Date : Aout 2022
  */
 import React from 'react'
-import {AiFillStar} from 'react-icons/ai'
 
-import { StarsWrapper } from './StarsSection.elements.js'
+import { StarsWrapper, StyledStar } from './StarsSection.elements.js'
 
 export default function StarsSection(props) {
+  
+  const nbrGreyStars = 5 - props.rating 
 
-    const style = {color: '#FF6060', fontSize:'30px', marginLeft: '10px' }
-    const styleTwo = {color: '#E3E3E3', fontSize:'30px', marginLeft: '10px' }
+return (
+  <StarsWrapper>
     
-    const nbrGreyStars = 5 - props.rating 
-    
+    {(() => {
+    let stars = [];
+    for (let i = 0; i < props.rating; i++) {
+      stars.push(<StyledStar color='color' key={`colorStar` + i}/> )
+    }
+    return stars
+  })()}
 
-  return (
-    <StarsWrapper>
-      {(() => {
-        let stars = [];
-        for (let i = 0; i < props.rating; i++) {
-          stars.push(<AiFillStar style={style} key={`colorStar` + i}/> )
-        }
-        return stars
-      })()}
-
-      {(() => {
-          let stars = [];
-          for (let i = 0; i < nbrGreyStars; i++) {
-            stars.push(<AiFillStar style={styleTwo} key={`greyStar` + i}/> )
-          }
-          return stars
-        })()}
-        
-    </StarsWrapper>
-  )
+  {(() => {
+      let stars = [];
+      for (let i = 0; i < nbrGreyStars; i++) {
+        stars.push(<StyledStar color='grey' key={`greyStar` + i}/> )
+      }
+      return stars
+    })()}
+     
+  </StarsWrapper>
+)
 }

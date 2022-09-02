@@ -10,16 +10,18 @@ export const WrapperProfile = styled.div`
      flex-direction: row;
      justify-content: flex-end;
      height: 64px;
-        @media screen and (max-width: 826px) {}
-        @media screen and (max-width: 680px) {}
-        @media screen and (max-width: 500px) {}
-        @media screen and (max-width: 375px) {}
+        @media screen and (max-width: 375px) {
+            margin-top: 16px;
+        }
 `
 export const OwnerName = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-right: 10px;
+        @media screen and (max-width: 375px) {
+            height: 33px;
+        };
 `
 export const ProfileFirstName = styled.p`
     font-style: normal;
@@ -32,7 +34,9 @@ export const ProfileFirstName = styled.p`
         @media screen and (max-width: 826px) {};
         @media screen and (max-width: 680px) {};
         @media screen and (max-width: 500px) {};
-        @media screen and (max-width: 375px) {};
+        @media screen and (max-width: 375px) {
+            font-size: 12px;
+        };
 `
 export const ProfileName = styled.p`
     font-style: normal;
@@ -44,7 +48,9 @@ export const ProfileName = styled.p`
         @media screen and (max-width: 826px) {};
         @media screen and (max-width: 680px) {};
         @media screen and (max-width: 500px) {};
-        @media screen and (max-width: 375px) {};
+        @media screen and (max-width: 375px) {
+            font-size: 12px;
+        };
 `
 export const ProfileImage = styled.img.attrs(props => ({
     alt: props.alt,
@@ -57,5 +63,9 @@ export const ProfileImage = styled.img.attrs(props => ({
         @media screen and (max-width: 826px) {};
         @media screen and (max-width: 680px) {};
         @media screen and (max-width: 500px) {};
-        @media screen and (max-width: 375px) {};
+        @media screen and (max-width: 375px) {
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+        };
 `
