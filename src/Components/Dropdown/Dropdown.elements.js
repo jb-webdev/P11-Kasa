@@ -196,3 +196,14 @@ export const DropdownBodyText = styled.p`
     
     
 `
+
+export const ListContainer = styled.div`
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    with: 100%;
+
+`

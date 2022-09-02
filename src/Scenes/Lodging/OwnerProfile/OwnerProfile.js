@@ -13,9 +13,7 @@ import {
   ProfileImage} from './OwnerProfile.elements.js'
 
 export default function OwnerProfile(props) {
-  console.log("==========")
-  console.log(props.picture)
-  console.log("==========")
+  
   return (
     <WrapperProfile>
       <OwnerName>

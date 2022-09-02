@@ -6,13 +6,28 @@
 */
 import React, {useState} from 'react'
 import { MdKeyboardArrowDown, MdKeyboardArrowUp} from 'react-icons/md';
-import {DropdownWrapper, DropdownHeader,DropdownHeaderText, DropdownBody, DropdownBodyText} from './Dropdown.elements.js'
+import {
+  DropdownWrapper, 
+  DropdownHeader,
+  DropdownHeaderText, 
+  DropdownBody,
+  ListContainer} from './Dropdown.elements.js'
 
+import Text from './Components/Text/Text.js'
+import List from './Components/List/List.js'
 
-
-  
 export default function Dropdown(props) {
   const dropdownModel = props.model
+  // On utilise une condition pour le choix entre liste ou texte
+  let compoText; 
+  const bodyText = props.bodyText
+
+  if (bodyText === "text"){
+    compoText = <Text dropdownModel={dropdownModel} description={props.description}/>
+  } else {
+    compoText = <ListContainer> {props.description.map(item => <List item={item}/>)} </ListContainer>
+  }
+  // ici mets du style à nos ReactIcons
   const styleIconeUp = {
     display: 'block',
     color: '#ffffff',
@@ -27,7 +42,6 @@ export default function Dropdown(props) {
   const handleClick = () => setOpen(!isOpen)
 
 
-// <DropdownHeader onClick={handleClick}>
   return (
     <DropdownWrapper model={dropdownModel}>
         <DropdownHeader onClick={handleClick} model={dropdownModel}>
@@ -35,7 +49,7 @@ export default function Dropdown(props) {
             {isOpen ? <MdKeyboardArrowUp style={styleIconeUp}/> : <MdKeyboardArrowDown style={styleIconeDown} />}
         </DropdownHeader>
         <DropdownBody $mode={isOpen} model={dropdownModel}>
-            <DropdownBodyText model={dropdownModel}>{props.description}</DropdownBodyText>
+            {compoText}
         </DropdownBody>
     </DropdownWrapper>
   )
