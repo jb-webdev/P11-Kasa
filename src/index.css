@@ -1,16 +1,9 @@
 /**
  * Author : Jean-Jacques Boero
- * Projet : App Kasa / P10 OC
+ * Projet : App Kasa / P11 OC
  * Date : Aout 2022
  */
-:root {
-    --color-fonts-primary : #FF6060;
 
-    --color-bg-primary : #FF6060;
-
-
-    --font-familly: 'Montserrat';
-}
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;

@@ -1,3 +1,8 @@
+/**
+ * Author : Jean-Jacques Boero
+ * Projet : App Kasa / P11 OC
+ * Date : Aout 2022
+ */
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './style.css'

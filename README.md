@@ -21,6 +21,5 @@ https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=0%3A
 * ### frontend
   * React
   * React-Router
-  * Styled-components
-  * JavaScript
+  * css
 
