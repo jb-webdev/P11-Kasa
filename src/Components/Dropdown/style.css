@@ -1,0 +1,154 @@
+/**
+ * Author : Jean-Jacques Boero
+ * Projet : App Kasa / P11 OC
+ * Date : Aout 2022
+ */
+/* ===== dropdown Wrapper ======*/
+.dropdownWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    margin-bottom: 33px;
+    overflow: hidden;
+}
+
+.largeWrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 38px;
+}
+
+.mediumWrapper {
+    margin-top: 0;
+}
+
+/* ==== header dropdown ===== */
+.headerDropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    background-color: #FF6060;
+
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.largeHeader {
+    width: 90%;
+    height: 47px;
+}
+
+.mediumHeader {
+    width: 582px;
+    height: 52px;
+}
+
+/* text Header */
+.textHeaderDropdown {
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.largetextHeaderDropdown {
+    font-size: 24px;
+    margin-left: 19px;
+}
+
+.mediumtextHeaderDropdown {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+/* ==== body dropdown ===== */
+.bodyDropdown {
+    display: none;
+    position: relative;
+    top: -10px;
+    height: auto;
+    text-align: justify;
+    background: #F7F7F7;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.openBody {
+    display: block;
+}
+
+.mediumBodyDropdown {
+    width: 582px;
+    max-height: 250px;
+}
+
+.largeBodyDropdown {
+    width: 90%;
+    max-height: 450px;
+}
+
+
+/* ===== list Container ===== */
+.listContainer {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    width: 100%;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 850px) {
+
+    .largeHeader {
+        width: 100%;
+    }
+
+    .largetextHeaderDropdown {
+        width: 100%;
+    }
+
+    .largeBodyDropdown {
+        width: 100%;
+        padding-left: 11.75px;
+        padding-right: 6.91px;
+        padding-bottom: 52.58px
+    }
+}
+
+@media screen and (max-width: 680px) {
+    
+}
+
+@media screen and (max-width: 375px) {
+    .largeWrapper {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    
+}

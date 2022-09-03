@@ -6,7 +6,7 @@
 import React from 'react'
 import './style.css'
 
-export default function Navbar() {
+export default function DropdownContainer() {
   return (
     <header id="navBarContainer">
       
