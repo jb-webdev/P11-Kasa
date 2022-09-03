@@ -21,6 +21,7 @@ export default function Banner(props) {
         backgroundRepeat:"no-repeat",
         backgroundSize:"cover",
         backgroundPosition: "center 45%",
+        
       }
       classCompo = "bannerContainer imgOne"
       
@@ -47,7 +48,7 @@ export default function Banner(props) {
   
 
   return (
-      <section 
+      <section
       className={classCompo} style={styleImage}>
         <p className="bannerTitle">{title}</p>
       </section>

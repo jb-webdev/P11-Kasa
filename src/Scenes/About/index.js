@@ -12,7 +12,7 @@ import DropdownContainer from './DropdownContainer/index.js'
 export default function About() {
   return (
     <main id="aboutContainer">
-      <Banner title="" page="home"/>
+      <Banner title="" page="about"/>
       <DropdownContainer />
     </main>
   )

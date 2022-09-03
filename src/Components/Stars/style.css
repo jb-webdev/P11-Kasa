@@ -1,0 +1,35 @@
+/**
+ * Author : Jean-Jacques Boero
+ * Projet : App Kasa / P11 OC
+ * Date : Aout 2022
+ */
+ .starsWrapper {
+    display: flex;
+    flex-direction : row;
+    justify-content: flex-end;
+ }
+
+ .spanStar {
+    margin-left: 10px;
+ }
+
+ .fa-star {
+    font-size: 30px;
+ }
+
+ .colorStar {
+    color: #FF6060;
+ }
+
+ .greyStar {
+    color: #E3E3E3;
+ }
+
+ /* RESPONSIVE */
+ @media screen and (max-width: 826px) {}
+
+ @media screen and (max-width: 680px) {}
+
+ @media screen and (max-width: 500px) {}
+
+ @media screen and (max-width: 375px) {}

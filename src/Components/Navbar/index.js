@@ -9,6 +9,7 @@ import './style.css'
 import logo from '../../services/img/logo-kasa.png'
 
 export default function Navbar() {
+  
   return (
     <div className="navBarContainer">
       <Link className="navbarLinkLogo" to="/" >

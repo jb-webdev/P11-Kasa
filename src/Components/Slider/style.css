@@ -1,0 +1,69 @@
+/**
+ * Author : Jean-Jacques Boero
+ * Projet : App Kasa / P11 OC
+ * Date : Aout 2022
+ */
+.sliderSection {
+    height: 415px;
+    border-radius: 25px;
+    z-index: 99;
+}
+.wrapperImage{
+    
+    height: 415px;
+    border-radius: 25px;
+    position: relative;
+    top: -415px;
+    z-index: -1;
+    overflow: hidden;
+}
+.wrapperImage img {
+    border-radius: 25px;
+    width: 100%;
+    height: 415px;
+    object-fit: cover;
+    object-position: center;
+    
+}
+.wrapperButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.btnSlider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    color: #ffffff;
+    font-size: 50px;
+    cursor: pointer;
+    
+}
+.countSlider{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+.paraphCountSlider{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 826px) {}
+
+@media screen and (max-width: 680px) {}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 375px) {
+    .sliderSection {
+        width: 355px;
+        height: 260px;
+        overflow: hidden;
+    }
+}

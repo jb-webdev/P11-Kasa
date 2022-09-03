@@ -8,6 +8,7 @@
 
  import Home from '../Scenes/Home/index.js'
  import About from '../Scenes/About/index.js'
+ import Lodging from '../Scenes/Lodging/index.js'
  import Error from '../Scenes/Error/index.js'
 
  export default function AppRouter() {
@@ -16,6 +17,7 @@
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/lodging/:id" element={<Lodging />} />
           <Route path="/*" element={<Error />} />
         </Routes>
      </>
