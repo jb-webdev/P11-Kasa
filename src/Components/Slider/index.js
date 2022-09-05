@@ -25,7 +25,7 @@ export default function Slider(props) {
     <div className="sliderSection">
       <div className='wrapperButton'>
         <div className='btnSlider' onClick={prev}>
-          <sapn><i className="fa-sharp fa-solid fa-angle-left"></i></sapn>
+          <span><i className="fa-sharp fa-solid fa-angle-left"></i></span>
         </div>
         <div className='countSlider'>
           <p className='paraphCountSlider'>{imageIndex +1}/{config.length}</p>

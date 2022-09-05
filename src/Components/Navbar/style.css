@@ -15,7 +15,7 @@
     position: top;
 }
 .navbarLogo {
-    height: 100px;
+    height: 68px;
 }
 .navbarLink {
     color: #FF6060;
@@ -24,6 +24,9 @@
     font-weight: 500;
     font-size: 24px;
     margin-left: 57px;
+}
+.active {
+    border-bottom: 2px solid #FF6060;
 }
 
 /* RESPONSIVE */
