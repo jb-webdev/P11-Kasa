@@ -4,6 +4,8 @@
  * Date : Aout 2022
  */
 .bannerContainer {
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 223px;
     border-radius: 25px;
     display: flex;

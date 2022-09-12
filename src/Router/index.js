@@ -10,7 +10,6 @@
  import About from '../Scenes/About/index.js'
  import Lodging from '../Scenes/Lodging/index.js'
  import Error from '../Scenes/Error/index.js'
- import TestError from '../Scenes/TestError/index.js'
 
  export default function AppRouter() {
    return (

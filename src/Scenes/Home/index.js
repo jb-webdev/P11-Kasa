@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <main id='HomeMain'>
-      <Banner title={datasGlobal.Banner[0].text} page="home"/>
+      <Banner title={datasGlobal.Banner[0].text} classCompo = "imgOne" image = "img-banner-one.png" position="center 45%"/>
       <Gallery />
     </main>
   )

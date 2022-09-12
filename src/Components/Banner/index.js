@@ -2,55 +2,32 @@
  * Author : Jean-Jacques Boero
  * Projet : App Kasa / P11 OC
  * Date : Aout 2022
- */
-import React from 'react'
-import './style.css'
-import image from '../../services/img/img-banner-one.png'
-import imageTwo from '../../services/img/img-banner-two.png'
-
-export default function Banner(props) {
-  const title = props.title
-  var styleImage
-  var classCompo = ""
+ * 
+ * 
+ compo type : 
+   <Banner 
+        title=" Titre du composant "
+        classCompo = "imgOne" or  "imgTwo"
+        image = "../../services/img/img-banner-one.png" 
+        position="center 45%"
+   />
+ 
+   */
+  import React from 'react'
+  import './style.css'
   
-  
-  switch (props.page) {
-    case "home":
-      styleImage = {
-        backgroundImage:`url(${image})`,
-        backgroundRepeat:"no-repeat",
-        backgroundSize:"cover",
-        backgroundPosition: "center 45%",
-        
-      }
-      classCompo = "bannerContainer imgOne"
-      
-      break
-    case "about":
-      styleImage = {
-        backgroundImage:`url(${imageTwo})`,
-        backgroundRepeat:"no-repeat",
-        backgroundSize:"cover",
-        backgroundPosition: "center 40%",
-      }
-      classCompo = "bannerContainer imgTwo"
-      break
-    default:
-      styleImage = {
-        backgroundImage:`url(${image})`,
-        backgroundRepeat:"no-repeat",
-        backgroundSize:"cover",
-        backgroundPosition: "center 45%",
-      }
-      classCompo = "bannerContainer imgOne"
-      break
-  }
-  
-
+  export default function Banner(props) {
+    var imGBanner = require('../../services/img/'+ props.image)
+    
+    const bannerStyle = {
+        backgroundImage:`url(${imGBanner})`,
+        backgroundPosition: `${props.position}`,
+    }
+   
   return (
       <section
-      className={classCompo} style={styleImage}>
-        <p className="bannerTitle">{title}</p>
+      className={`bannerContainer ` + props.classCompo} style={bannerStyle}>
+        <p className="bannerTitle">{props.title}</p>
       </section>
     
   )

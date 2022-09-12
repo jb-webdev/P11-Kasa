@@ -2,6 +2,12 @@
  * Author : Jean-Jacques Boero
  * Projet : App Kasa / P11 OC
  * Date : Aout 2022
+ * 
+ * 
+compo type : 
+      <Stars 
+        rating="nombre de like obtenue provenant de la BDD => rating"
+      />
  */
 import React from 'react'
 import './style.css'

@@ -1,0 +1,134 @@
+/**
+ * Author : Jean-Jacques Boero
+ * Projet : App Kasa / P11 OC
+ * Date : Aout 2022
+ */
+.sectionProfile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.sectionDescription{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: top;
+    margin-bottom: 100px;
+}
+/* === WRAPPER ONE === */
+.wrapperBoxOne{
+    display: flex;
+    flex-direction: column;
+}
+
+.titleWrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.tagWrapper{
+    display:flex;
+    flex-direction: row;
+    margin-top: 23px;
+}
+/* === WRAPPER TWO === */
+.wrapperBoxTwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.profileWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 64px;
+}
+.titleProfileTitle {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+
+    color: #FF6060;
+    font-size: 36px;
+}
+
+.locationProfileTitle {
+    height: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+
+    color: #FF6060;
+    font-size: 18px;
+}
+
+.profileOwnerNameWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.profileFirstName{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    text-align: right;
+    color: #FF6060;
+}
+
+.profileName {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    text-align: right;
+    color: #FF6060;
+}
+.profileImage{
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 375px) {
+    .lodgingMain {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .sectionProfile {
+        flex-direction: column;
+    }
+    .profileWrapper{
+        margin-top: 16px;
+    }
+    .titleProfileTitle {
+        font-size: 18px
+    }
+    .locationProfileTitle {
+        font-size: 14px
+    }
+    .profileOwnerNameWrapper{
+        height: 33px;
+    }
+    .profileFirstName{
+        font-size: 12px;
+    }
+    .profileName {
+        font-size: 12px;
+    }
+    /* === img profile === */
+    .profileImage{
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+    }
+}

@@ -6,12 +6,17 @@
 import React from 'react';
 import './style.css'
 
-import GetLodging from './components/GetLodging'
+import GetLodging from './GetLodging.js'
+import Error from '../Error/index.js'
+// recupere l'id useParams
+// retour page error
+let isOK = true
 
 export default function Lodging() {
   return (
     <main className="lodgingMain">
-      <GetLodging />
+      {isOK ? <GetLodging /> : <Error />}
+      
     </main>
   )
 }

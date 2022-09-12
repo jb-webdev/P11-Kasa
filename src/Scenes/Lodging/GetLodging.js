@@ -4,15 +4,12 @@ import { useParams } from 'react-router-dom'
 
 import './GetLodging.css'
 
-import datas from '../../../services/data/datas.json'
+import datas from '../../services/data/datas.json'
 
-import Slider from '../../../Components/Slider/index.js'
-import ProfileTitle from '../../../Components/ProfileTitle/index.js'
-import Tag from '../../../Components/Tag/index.js'
-import ProfileOwnerName from '../../../Components/ProfileOwnerName/index.js'
-import ProfileImage from '../../../Components/ProfileImg/index.js'
-import Stars from '../../../Components/Stars/index.js'
-import Dropdown from '../../../Components/Dropdown/index.js'
+import Slider from '../../Components/Slider/index.js'
+import Tag from '../../Components/Tag/index.js'
+import Stars from '../../Components/Stars/index.js'
+import Dropdown from '../../Components/Dropdown/index.js'
 
 
 
@@ -35,7 +32,8 @@ export default function GetLodging() {
         <section className='sectionProfile'>
           <div className='wrapperBoxOne'>
             <div className='titleWrapper'>
-              <ProfileTitle title={datasFound.title} location={datasFound.location} />
+              <h2 className='titleProfileTitle'>{datasFound.title}</h2>
+              <p className='locationProfileTitle'>{datasFound.locationn}</p>
             </div>
             <div className='tagWrapper'>
               {datasFound.tags.map(tag => <Tag text={tag} key={tag}/>)}
@@ -43,8 +41,11 @@ export default function GetLodging() {
           </div>
           <div className='wrapperBoxTwo'>
             <div className='profileWrapper'>
-              <ProfileOwnerName  firstname={str[0]} name={str[1]} />
-              <ProfileImage src={datasFound.host.picture} alt={altImage} />
+              <div className='profileOwnerNameWrapper'>
+                <p className='profileFirstName'>{str[0]}</p>
+                <p className='profileName'>{str[1]}</p>
+              </div>
+              <img className='profileImage' src={datasFound.host.picture} alt={altImage}/> 
             </div>
             <Stars rating={datasFound.rating}/>
           </div>

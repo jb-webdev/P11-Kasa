@@ -2,20 +2,27 @@
  * Author : Jean-Jacques Boero
  * Projet : App Kasa / P11 OC
  * Date : Aout 2022
+ * 
+ * compo type 
+    <Dropdown 
+          sizemodel="model du composant large or medium" 
+          bodyList= "type de composant description text ou list"
+          title="titre du composant"
+          description="description du composant"
+        />
  */
 import React, {useState} from 'react'
 import './style.css'
 import { MdKeyboardArrowDown, MdKeyboardArrowUp} from 'react-icons/md';
 
-import Text from './components/Text/index.js'
-import List from './components/List/index.js'
-
-
-
-
-
 export default function Dropdown(props) {
   var sizeModel = props.sizemodel
+  var classWrapper
+  var classheader
+  var classheaderText
+  var classBody 
+  var classOPen = ""
+  var classCompo = ""
   var classModel = [
     "dropdownWrapper largeWrapper",
     "dropdownWrapper mediumWrapper",
@@ -26,13 +33,6 @@ export default function Dropdown(props) {
     "bodyDropdown largeBodyDropdown",
     "bodyDropdown mediumBodyDropdown ",
   ]
-
-  var classWrapper
-  var classheader
-  var classheaderText
-  var classBody 
-  var classOPen = ""
-
   if (sizeModel === "large"){
       classWrapper = classModel[0]
       classheader = classModel[2]
@@ -44,10 +44,7 @@ export default function Dropdown(props) {
       classheaderText = classModel[5]
       classBody = classModel[7]
   }
-
-  // On utilise une condition pour le choix entre liste ou texte
-  // let compoText; 
-  // const bodyText = props.bodyText
+  
   // ici mets du style à nos ReactIcons
   const styleIconeUp = {
     display: 'block',
@@ -59,14 +56,20 @@ export default function Dropdown(props) {
     color: '#ffffff',
     marginRight: '33.16px',
   }
+  // ici on gère l'ouverture et la fermeture du dropdown
   const [isOpen, setOpen] = useState(false)
   const handleClick = () => setOpen(!isOpen)
-
-  
-
   if (isOpen){
     classOPen = " openBody"
   }
+  
+  /** ici on gère les classe du compo selon la taille désiré */
+  if(props.sizeModel === "large"){
+    classCompo = "textBodydropdown largeTextBodyDropdown"
+  } else {
+    classCompo = "textBodydropdown mediumTextBodyDropdown"
+  }
+
 
 
   return (
@@ -79,7 +82,12 @@ export default function Dropdown(props) {
 
       <div className={classBody + classOPen}>
         {props.bodyList === 'text' ? 
-        <Text sizeModel ={sizeModel} description={props.description}/> : <List description={props.description}/>}
+          <p className={classCompo}>{props.description}</p> 
+        : 
+          <ul className='listContainer'>
+            {props.description.map(item => <li className='itemList' key={item}>{item} </li>)}
+          </ul>
+        }
       </div>
       
     </div>
