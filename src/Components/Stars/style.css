@@ -5,12 +5,15 @@
  */
  .starsWrapper {
     display: flex;
-    flex-direction : row;
+    flex-direction: row;
     justify-content: flex-end;
+    height: auto;
  }
 
  .spanStar {
     margin-left: 10px;
+    display: flex;
+    align-items: center;
  }
 
  .fa-star {
@@ -24,12 +27,20 @@
  .greyStar {
     color: #E3E3E3;
  }
-
  /* RESPONSIVE */
- @media screen and (max-width: 826px) {}
+ 
+ @media screen and (max-width: 760px) {
+   .fa-star {
+      font-size: 22px;
+   }
+ }
 
  @media screen and (max-width: 680px) {}
 
  @media screen and (max-width: 500px) {}
 
- @media screen and (max-width: 375px) {}
+ @media screen and (max-width: 375px) {
+    .fa-star {
+       font-size: 15px;
+    }
+ }

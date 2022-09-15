@@ -3,7 +3,7 @@
  * Projet : App Kasa / P11 OC
  * Date : Aout 2022
  */
-.sectionProfile{
+.sectionProfile {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,47 +12,52 @@
     margin-bottom: 100px;
 }
 
-.sectionDescription{
+.sectionDescription {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: top;
     margin-bottom: 100px;
 }
+
 /* === WRAPPER ONE === */
-.wrapperBoxOne{
+.wrapperBoxOne {
     display: flex;
     flex-direction: column;
 }
 
-.titleWrapper{
+.titleWrapper {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
 }
-.tagWrapper{
-    display:flex;
-    flex-direction: row;
+
+.tagWrapper {
+    display: flex;
+    flex-flow: row wrap;
     margin-top: 23px;
 }
+
 /* === WRAPPER TWO === */
-.wrapperBoxTwo{
+.wrapperBoxTwo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /*justify-content: flex-end;*/
 }
-.profileWrapper{
+
+.profileWrapper {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     height: 64px;
 }
+
 .titleProfileTitle {
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%;
-
     color: #FF6060;
     font-size: 36px;
 }
@@ -67,14 +72,14 @@
     font-size: 18px;
 }
 
-.profileOwnerNameWrapper{
+.profileOwnerNameWrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-right: 10px;
 }
 
-.profileFirstName{
+.profileFirstName {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -91,44 +96,104 @@
     text-align: right;
     color: #FF6060;
 }
-.profileImage{
+
+.profileImage {
     border-radius: 50%;
     width: 64px;
     height: 64px;
 }
 
-
 /* RESPONSIVE */
-@media screen and (max-width: 375px) {
-    .lodgingMain {
-        margin-left: 20px;
-        margin-right: 20px;
+@media screen and (max-width: 1010px) {
+    .sectionDescription {
+        flex-direction: column;
     }
+
+    .wrapperBoxTwo {
+        height: 100px;
+        justify-content: flex-end;
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 860px) {
     .sectionProfile {
         flex-direction: column;
     }
-    .profileWrapper{
-        margin-top: 16px;
+
+    .wrapperBoxTwo {
+        height: auto;
+        width: 100%;
+        align-self: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
     }
+
+    .tagWrapper {
+        margin-bottom: 23px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .titleProfileTitle {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .titleProfileTitle {
+        font-size: 28px;
+    }
+
+    .tagWrapper {
+        margin-bottom: 23px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .sectionProfile {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .sectionDescription {
+        margin-bottom: 30px;
+    }
+
+    .profileWrapper {
+        align-items: center;
+    }
+
     .titleProfileTitle {
         font-size: 18px
     }
+
     .locationProfileTitle {
         font-size: 14px
     }
-    .profileOwnerNameWrapper{
+
+    .profileOwnerNameWrapper {
         height: 33px;
     }
-    .profileFirstName{
+
+    .profileFirstName {
         font-size: 12px;
     }
+
     .profileName {
         font-size: 12px;
     }
+
     /* === img profile === */
-    .profileImage{
+    .profileImage {
         border-radius: 50%;
         width: 32px;
         height: 32px;
+    }
+
+    .tagWrapper {
+        margin-bottom: 0;
+        margin-top: 0;
     }
 }

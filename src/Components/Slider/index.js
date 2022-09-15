@@ -35,7 +35,7 @@ export default function Slider(props) {
         </div>
       </div>
       <picture className='wrapperImage'>
-        <img src={config[imageIndex]} alt='essai'/>
+        <img className='imageSlider' src={config[imageIndex]} alt='essai'/>
       </picture>
       
     </div>

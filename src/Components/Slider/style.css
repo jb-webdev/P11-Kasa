@@ -4,20 +4,19 @@
  * Date : Aout 2022
  */
 .sliderSection {
-    height: 415px;
     border-radius: 25px;
+    height: 415px;
     z-index: 99;
 }
 .wrapperImage{
-    
-    height: 415px;
     border-radius: 25px;
+    height: 415px;
     position: relative;
     top: -415px;
     z-index: -1;
     overflow: hidden;
 }
-.wrapperImage img {
+.imageSlider {
     border-radius: 25px;
     width: 100%;
     height: 415px;
@@ -62,8 +61,23 @@
 
 @media screen and (max-width: 375px) {
     .sliderSection {
-        width: 355px;
-        height: 260px;
+        width: 100%;
+        height: 255px;
         overflow: hidden;
     }
+    .btnSlider{
+        width: 80px;
+        font-size: 20px;
+    }
+    .wrapperImage{
+        width: 100%;
+        height: 260px;
+    }
+    .imageSlider{
+        object-fit: cover;
+    }
+    .paraphCountSlider{
+        font-size: 15px;
+    }
+
 }

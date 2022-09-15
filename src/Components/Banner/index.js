@@ -26,7 +26,8 @@
    
   return (
       <section
-      className={`bannerContainer ` + props.classCompo} style={bannerStyle}>
+        className={`bannerContainer ` + props.classCompo} style={bannerStyle}
+      >
         <p className="bannerTitle">{props.title}</p>
       </section>
     

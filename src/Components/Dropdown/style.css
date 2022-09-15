@@ -108,50 +108,6 @@
     max-height: 450px;
 }
 
-
-/* ===== list Container ===== */
-.listContainer {
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    padding-top: 20px;
-    padding-bottom: 18px;
-    width: 100%;
-}
-
-/* RESPONSIVE */
-
-@media screen and (max-width: 850px) {
-
-    .largeHeader {
-        width: 100%;
-    }
-
-    .largetextHeaderDropdown {
-        width: 100%;
-    }
-
-    .largeBodyDropdown {
-        width: 100%;
-        padding-left: 11.75px;
-        padding-right: 6.91px;
-        padding-bottom: 52.58px
-    }
-}
-
-@media screen and (max-width: 680px) {
-    
-}
-
-@media screen and (max-width: 375px) {
-    .largeWrapper {
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-
-    
-}
 /* ===== dropdown type text ===== */
 
 .textBodydropdown{
@@ -167,38 +123,6 @@
 }
 .mediumTextBodyDropdown {
     font-size: 18px;
-}
-
- /* RESPONSIVE */
-@media screen and (max-width: 850px) {
-    .textBodydropdown{
-        font-size: 1em;
-    }
-    .largeTextBodyDropdown {
-        font-size: 1em;
-    }
-}
-
-@media screen and (max-width: 680px) {
-    .textBodydropdown{
-        width: 100%;
-        font-size: 0.9em;
-        margin:0;
-    }
-    .largeTextBodyDropdown {
-        width: 100%;
-        font-size: 0.9em;
-        margin: 0;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .textBodydropdown{
-        font-size: 12px;
-    }
-    .largeTextBodyDropdown {
-        font-size: 12px;
-    }
 }
 
 /* ===== dropdown type list ===== */
@@ -224,4 +148,78 @@
 
     color: #FF6060;
     font-size: 18px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1350px){
+    .mediumHeader{
+        width: 400px;  
+    }
+    .mediumBodyDropdown {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 1010px){
+    .mediumHeader{
+        width: 90%;  
+    }
+    .mediumBodyDropdown {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 850px) {
+
+    .largeHeader {
+        width: 100%;
+    }
+
+    .largetextHeaderDropdown {
+        width: 100%;
+    }
+
+    .largeBodyDropdown {
+        width: 100%;
+        padding-left: 11.75px;
+        padding-right: 6.91px;
+        padding-bottom: 52.58px
+    }
+
+    .textBodydropdown{
+        font-size: 1em;
+    }
+    .largeTextBodyDropdown {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .textBodydropdown{
+        width: 100%;
+        font-size: 0.9em;
+        margin:0;
+    }
+    .largeTextBodyDropdown {
+        width: 100%;
+        font-size: 0.9em;
+        margin: 0;
+    }
+    .mediumHeader{
+        width: 100%;  
+    }
+    .mediumBodyDropdown {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .largeWrapper {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .textBodydropdown{
+        font-size: 12px;
+    }
+    .largeTextBodyDropdown {
+        font-size: 12px;
+    }
 }

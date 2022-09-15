@@ -33,7 +33,7 @@ export default function GetLodging() {
           <div className='wrapperBoxOne'>
             <div className='titleWrapper'>
               <h2 className='titleProfileTitle'>{datasFound.title}</h2>
-              <p className='locationProfileTitle'>{datasFound.locationn}</p>
+              <p className='locationProfileTitle'>{datasFound.location}</p>
             </div>
             <div className='tagWrapper'>
               {datasFound.tags.map(tag => <Tag text={tag} key={tag}/>)}

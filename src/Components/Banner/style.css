@@ -21,7 +21,7 @@
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 826px) {
+@media screen and (max-width: 850px) {
     .bannerTitle {
         font-size: 1.5em;
     }
