@@ -30,6 +30,5 @@
       >
         <p className="bannerTitle">{props.title}</p>
       </section>
-    
   )
 }
