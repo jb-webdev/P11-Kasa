@@ -17,16 +17,6 @@ https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=0%3A
 * Créer des composants avec React
 * Intégrer une maquette
 
-## Cloner le projet
-
-ajouter les notes pour le deploiment 
-
-1- Cloner le projet
-
-2- executer npm i
-
-3- npm start
-
 ## Installation  
 
 * nodejs
@@ -36,7 +26,11 @@ ajouter les notes pour le deploiment
 1 - Après avoir cloner le projet, installer les dépendences avec :  
 
 ```
-npm install or yarn install
+npm install
+```
+or
+```
+npm install  yarn install
 ```
   
 ### lancer le projet :
