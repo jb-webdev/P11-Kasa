@@ -15,11 +15,38 @@ https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=0%3A
 * Développer les routes d'une application web avec React Router  
 * Initialiser une application web avec un framework 
 * Créer des composants avec React
+* Intégrer une maquette
 
-## Techno utilisés pour le projet  
+## Cloner le projet
 
-* ### frontend
-  * React
-  * React-Router
-  * css
+ajouter les notes pour le deploiment 
 
+1- Cloner le projet
+
+2- executer npm i
+
+3- npm start
+
+## Installation  
+
+* nodejs
+* react
+* npm or yarn
+
+1 - Après avoir cloner le projet, installer les dépendences avec :  
+
+```
+npm install or yarn install
+```
+  
+### lancer le projet :
+  
+```
+npm start
+```
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
