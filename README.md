@@ -30,7 +30,7 @@ npm install
 ```
 or
 ```
-npm install  yarn install
+yarn install
 ```
   
 ### lancer le projet :
